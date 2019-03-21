@@ -11,6 +11,7 @@ To produce the figures, you must run two Matlab scripts:
 Detailed information on the contents of this repository: 
 
 This repo contains 4 subfolders: 
+
 (1) AnalyzeData: Matlab code to process the fMRI data. AllAnalysisScript.m calls four functions (also within that folder) to analyze different aspects of the data. Each function loads in a table T from the Data folder, which has each individual voxel's response in each condition of the localizer and main attention experiments. The results are saved in .mat files in a Results folder, which is created in the same parent folder as AnalyzeData/. 
 
 Functions called by AllAnalysisScript: 
@@ -19,7 +20,7 @@ Functions called by AllAnalysisScript:
     ComputeMeanBOLDResps_WordFreq.m
     SpatialEncodingModel_WordFreq.m
 
-    More information is in the header of each .m file. 
+More information is in the header of each .m file. 
 
 (2) Data: .mat files containing data from each subject. There are four files in this folder: 
 
