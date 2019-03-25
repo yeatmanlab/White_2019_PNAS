@@ -22,8 +22,8 @@ addpath(genpath(analysisDir));
 
 p = getPaths(); 
 %% load big table 
-tableFileName = fullfile(p.data,'AllSubjectVoxelResponseTable_WordFreq.mat'); 
-load(tableFileName,'T');
+tableFileName = fullfile(p.data,'AllSubjectVoxelResponseTable_WordFreq.csv'); 
+T = readtable(tableFileName);
 
 brainAreas = unique(T.region); 
 hemispheres = unique(T.hemisphere); 

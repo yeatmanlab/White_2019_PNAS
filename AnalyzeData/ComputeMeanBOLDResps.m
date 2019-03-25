@@ -27,8 +27,8 @@ p = getPaths();
 
 
 %% load big table of individual voxel responses
-tableFileName = fullfile(p.data,'AllSubjectVoxelResponseTable.mat'); 
-load(tableFileName,'T');
+tableFileName = fullfile(p.data,'AllSubjectVoxelResponseTable.csv'); 
+T = readtable(tableFileName);
 
 brainAreas = unique(T.region); 
 hemispheres = unique(T.hemisphere); 

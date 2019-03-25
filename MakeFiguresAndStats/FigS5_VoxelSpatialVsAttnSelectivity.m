@@ -13,8 +13,8 @@ addpath(genpath(analysisDir));
 p = getPaths(); 
 
 %% load big table
-tableFileName = fullfile(p.data,'AllSubjectVoxelResponseTable.mat');
-load(tableFileName,'T');
+tableFileName = fullfile(p.data,'AllSubjectVoxelResponseTable.csv');
+T = readtable(tableFileName);
 
 %% open a file to print stats
 statsFile = fullfile(p.stats,'StatsS5_SpatialVsAttnSelectivityStats.txt');
