@@ -41,8 +41,8 @@ addpath(genpath(analysisDir));
 p = getPaths(); 
 
 %% load big table 
-tableFileName = fullfile(p.data,'AllSubjectVoxelResponseTable_WordFreq.mat'); 
-load(tableFileName,'T');
+tableFileName = fullfile(p.data,'AllSubjectVoxelResponseTable_WordFreq.csv'); 
+T = readtable(tableFileName);
 
 %% select data
 brainAreas = {'VWFA_1','VWFA_2'}; 

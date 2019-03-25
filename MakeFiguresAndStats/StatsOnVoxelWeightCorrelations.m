@@ -31,8 +31,8 @@ addpath(genpath(analysisDir));
 p = getPaths(); 
 
 %% load big table
-tableFileName = fullfile(p.data,'AllSubjectVoxelResponseTable.mat');
-load(tableFileName,'T');
+tableFileName = fullfile(p.data,'AllSubjectVoxelResponseTable.csv');
+T = readtable(tableFileName);
 
 %% stats file
 statsF = fopen(fullfile(p.stats,'VoxelWeightCorrelations.txt'),'w');
