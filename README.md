@@ -41,7 +41,7 @@ For example, allR.PCs is a 5D matrix of the proportion correct achieved by each 
 AllSubjBehavior_WordFreq.mat: 
     This file contains two variables, allR and rAvg, which are very much like the variables in AllSubjBehavior, except they are further sub-divided by the lexical frequency bin and length of each word. As shown in rAvg.valsByIndex, each matrix now has dimensions targLength and distLength, which are for the length of the target word (the one the subject had to judge) and the 'distractor' word (the word not asked about on that trial). There are also dimensions for targFreqBin  and distFreqBin (1=low, 2=high). 
 
-'AllSubjectVoxelResponseTable.csv'
+AllSubjectVoxelResponseTable.csv:
 This is a table of individual voxel data from the localizer scans and main experiment. Only voxels from the ROIs are included (for both hemispheres, V1, V2, V3, V4, VO, LO, VWFA-1, and VWFA-2). The voxel responses, expressed as percent signal change, were estimated by glmDenoise. The columns of this table are: 
         subject: integers 1-15, indicating subject numbers
         voxelIndex: linear index of each voxel within the subject's functional volume
@@ -62,7 +62,7 @@ This is a table of individual voxel data from the localizer scans and main exper
 
 
 AllSubjectVoxelResponseTable_WordFreq.csv: 
-This file contains a single table, T, that is organized much like the table in AllSubjectVoxelResponseTable.mat, except the responses from the main experiment are divided by the lexical frequencies of the left and right words, which are each categorized as "high" or "low". This division is present for each cue condition: for example, for the distributed cue condition, each voxel has 4 responses: 
+This is a table organized much like the table in AllSubjectVoxelResponseTable.csv, except the responses from the main experiment are divided by the lexical frequencies of the left and right words, which are each categorized as "high" or "low". This division is present for each cue condition: for example, for the distributed cue condition, each voxel has 4 responses: 
     resp_distrib_leftLow_rightLow, resp_distrib_leftLow_rightHigh, resp_distrib_leftHigh_rightLow, and resp_distrib_leftHigh_rightHigh. 
 
 
